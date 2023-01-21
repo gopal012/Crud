@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Playfair+Display&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.header{
+    background-color: orangered;
+    width: 100vw;
+    height: 4vh;
+    text-align: center;
+    padding: 1.5vh 0px;
+}
+
+.header h2{
+    font-weight: bolder;    
+}
+
+.upper-btn-box{
+    width: 98%;
+    height: 10vh;
+    display: flex;
+    margin: 4vh;
+}
+
+.left-box{
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 5vw;
+}
+
+.right-box{
+    width: 50%;
+    height: 10vh;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 5vw;
+    font-size: 4vh;
+    color: #4286F5;
+}
+#first-btn,#second-btn{                    /*add employee,clear data*/
+    border: none;
+    outline: none;
+    width: 12vw;
+    height: 5vh;
+    margin: 1vw;
+    background-color: #4286F5;
+    font-size: 3vh;
+    color: white;
+    cursor: pointer;
+}
+
+.right-box #search{                  /*search input*/
+    width: 25vw;
+    height: 5vh;
+    outline: none;
+    font-size: 3vh;
+    font-weight: bolder;
+    text-align: center;
+    border-width: 0px 0px 3px;
+    border-color: #4286F5;
+}
+
+#third-btn{             /*search button*/
+    border: none;
+    outline: none;
+    width: 12vw;
+    height: 5vh;
+    margin: 1vw;
+    background-color: #4286F5;
+    font-size: 3vh;
+    color: white;
+    cursor: pointer;
+}
+
+.table-box{
+    width: 100%;
+}
+
+.table-box table{
+    width: 98vw;
+    margin: 1vw;
+    border-left: 1px solid black;
+}
+
+.table-box table tr th{
+    padding-top: 1.5vw;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 1.5vw;
+    font-weight:bolder;
+}
+
+.table-box table tr td{
+    text-align: center;
+    font-size: 1vw;
+    padding: 1.5vh;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+td button{                 /*eye,delete*/
+    width: 3vw;
+    cursor: pointer;
+    font-size: 2.5vh;
+    border: none;
+    background-color: white;
+}
+
+td button:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.model{
+    position: fixed;
+    width: 0%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(206, 205, 205);
+    display: flex;
+    border-top: 2vh groove #4286F5;
+    opacity: 0;
+    z-index: -1;
+    transition: .5s ease-in-out;
+}
+
+.active{                         /*to add in model to show registration form*/
+    opacity: 1;
+    z-index: 1;
+    width: 50%;
+}
+
+.model .left-model{                 /*pic wali side*/
+    width: 40%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    background-color: rgb(221, 221, 221);
+}
+
+.model .right-model{                       /*name,id,code inke input wali side*/
+    border-left: 1vw groove #4286F5;
+    width: 55%;
+    height: 100%;
+    padding:  0px 1vw;
+}
+
+#register-form{                         
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.model .left-model img{                   /*image uploaded dimension*/
+    padding: 2vw;
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+}
+
+.model .left-model i{                   /*plus sign*/
+    font-size: 5vh;
+    position: absolute;
+    top: 25%;
+    right: 20%;
+}
+
+.model .left-model #file{                 /*image file*/
+    width: 3vw;
+    height: 4vh;
+    top: 25%;
+    right: 20%;
+    position: absolute;
+    opacity: 0;
+}
+
+.right-model .input-box{         /*name,id,code inke input*/
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vh;
+}
+
+.right-model .input-box input{   /*name,id,code inke input*/
+    width: 70%;
+    font-size: 2.5vh;
+    border-width: 0vh 0vh 3px;
+    outline: none;
+    border-color:#4286F5;
+    background-color:  rgb(205, 205, 205);
+}
+
+.input-box button{             /*register,update*/
+    width: 40%;
+    height: 6vh;
+    margin: .5vw;
+    font-size: 3vh;
+    border-radius: 1vh;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.model>i{                      /*cross*/
+    position: absolute;
+    right: -2%;
+    top: -5%;
+    font-size: 3.5vh;
+    cursor: pointer;
+}

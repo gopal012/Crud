@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Record</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(min-width:1700px) and (max-width:3000px)" href="style.css" >
+    <link rel="stylesheet" media="(min-width:1000px) and (max-width:1700px)" href="style1.css" >
+    <link rel="stylesheet" media="(min-width:600px) and (max-width:1000px)" href="style2.css" >
+    <link rel="stylesheet" media="(min-width:350px) and (max-width:600px)" href="style3.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h2>Employee Details</h2>
+    </div>
+    <div class="upper-btn-box">
+        <div class="left-box">
+            <button id="first-btn"><i class="fa fa-plus"></i> &nbsp; Add Employee</button>
+            <button id="second-btn"><i class="fa-sharp fa-solid fa-eraser"></i> &nbsp; Clear All Data</button>
+        </div>
+        <div class="right-box">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <input type="search" name="search" id="search" placeholder="Type Here">
+            <button id="third-btn">Search</button>
+        </div>
+    </div>
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>Sr No.</th>
+                <th>Profile</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>EMail</th>
+                <th>Office Code</th>
+                <th>Job Title</th>
+                <th>Actions</th>
+            </tr>
+            <tbody id="table-data">
+
+            </tbody>
+        </table>
+    </div>
+    <div class="model">
+        <i id = "cross" class="fa-sharp fa-solid fa-circle-xmark"></i>
+        <div class="left-model">
+            <img src="profile.jpg" alt="error" id="profile-pic">
+            <i class="fa fa-plus"></i>
+            <input type="file" name="File" id="file">
+        </div>
+        <div class="right-model">
+            <form id="register-form">
+                <div class="input-box">
+                    <label for="id">ID</label>
+                    <input type="text" name="id" id="id" required>
+                </div>
+                <div class="input-box">               
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="l-name">Last Name</label>
+                    <input type="text" name="l-name" id="l-name" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="code">Code</label>
+                    <input type="number" name="code" id="code" required>
+                </div>
+                <div class="input-box">
+                    <label for="job-title">Job Title</label>
+                    <input type="text" name="job-title" id="job-title" required>
+                </div>
+                <div class="input-box" style="justify-content: center;">
+                    <button id="register-btn" style="background-color:#4286f5">Register</button>
+                    <button id = "update-btn" style="background-color:orangered">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Playfair+Display&display=swap');
+
+.upper-btn-box{
+    margin: 1vh;
+}
+
+#first-btn,#second-btn{                    /*add employee,clear data*/
+    width: 14vw;
+    font-size: 1.5vw;
+}
+
+.right-box #search{                  /*search input*/
+    width: 25vw;
+    font-size: 1.5vw;
+}
+
+#third-btn{             /*search button*/
+    width: 12vw;
+    font-size: 1.5vw;
+}
+
+.model{
+    height: 60%;
+}
+
+.active{
+    width: 70%;
+}
+
+.right-model .input-box input{
+    width: 60%;
+}
+

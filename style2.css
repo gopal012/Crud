@@ -1,0 +1,79 @@
+.header{
+    width: 102%;
+}
+.left-box{
+    width: 40%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 0px;
+}
+
+.right-box{
+    padding: 0px 0px 0px 7vw;
+}
+
+#first-btn,#second-btn{
+    width: 24vw;
+    height: 10vh;
+    font-size: 2.3vw;
+    color: white;
+    cursor: pointer;
+}
+
+.upper-btn-box{
+    margin: 0vh;
+    height: 13vh;
+    width: 100%;
+}
+
+.right-box #search{                  /*search input*/
+    width: 25vw;
+    font-size: 2.3vw;
+}
+
+#third-btn{             /*search button*/
+    width: 12vw;
+    font-size: 2.3vw;
+}
+
+.table-box table tr th{
+    padding-top: 2.5vw;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 2.2vw;
+}
+
+.table-box table tr td{
+    text-align: center;
+    font-size: 2vw;
+    padding: 1vh;
+}
+
+.table-box table tr td img{
+    width: 5vw;
+    height: 5vw;
+}
+
+#acti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-box table{
+    width: 99vw;
+    margin: 0.5vw;
+}
+
+.model{
+    height: 60%;
+}
+
+.active{
+    width: 90%;
+}
+
+.right-model .input-box input{
+    width: 60%;
+}
